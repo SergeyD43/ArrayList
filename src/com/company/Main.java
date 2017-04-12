@@ -10,5 +10,9 @@ public class Main {
         System.out.println("Size: " + list.size());
         System.out.println("First element: " + list.get(0));
         System.out.println("Second element: " + list.get(1));
+        list.remove(1);
+        System.out.println("Size: " + list.size());
+        System.out.println("First element: " + list.get(0));
+        System.out.println("Second element: " + list.get(1));
     }
 }

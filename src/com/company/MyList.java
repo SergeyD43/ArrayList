@@ -18,6 +18,15 @@ public class MyList<T> {
         array[size++] = item;
     }
 
+    public void remove(int index){
+        array[index]=null;
+        for (int i = index; i < size; i++) {
+            int t = i++;
+            array[i] = array[t];
+        }
+        size--;
+    }
+
     private void resize(int newLength) {
         Object[] newArray = new Object[newLength];
         System.arraycopy(array, 0, newArray, 0, size);
